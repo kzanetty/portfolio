@@ -1,0 +1,23 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: calc(100vh - var(--height-nav-bar));
+}
+
+.home {
+  background-color: rgb(75, 2, 2);
+  margin-top: var(--height-nav-bar);
+  border: var(--border-test);
+}
+
+.about {
+  background-color: rgba(0, 128, 0, 0.068);
+  border: var(--border-test);
+}
+
+.contact {
+  background-color: rgba(0, 0, 255, 0.055);
+  border: var(--border-test);
+}
