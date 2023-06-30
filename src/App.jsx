@@ -1,11 +1,16 @@
-import { AboutMeScreen, ExperienceScreen, ProjectScreen, ContactScreen } from './ui/screens'
-import { NavbarComponent } from './ui/components/navbar/navbar.component'
-import './App.css'
-import { DarkModeComponent } from './ui/components'
+import {
+  AboutMeScreen,
+  ExperienceScreen,
+  ProjectScreen,
+  ContactScreen,
+} from "./ui/screens";
+import { NavbarComponent } from "./ui/components/navbar/navbar.component";
+import "./App.css";
+import { DarkModeComponent } from "./ui/components";
 
 function App() {
   return (
-    <div className='app'>
+    <div className="app">
       <NavbarComponent />
       <DarkModeComponent />
       <AboutMeScreen />
@@ -13,12 +18,7 @@ function App() {
       <ProjectScreen />
       <ContactScreen />
     </div>
-  )
+  );
 }
 
-export default App
-
-// sobre mim
-//experiencia
-//trabalhos
-//contato
+export default App;
