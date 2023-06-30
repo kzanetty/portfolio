@@ -1,16 +1,24 @@
-import { HomeScreen, AboutScreen, ContactScreen } from './ui/screens'
+import { AboutMeScreen, ExperienceScreen, ProjectScreen, ContactScreen } from './ui/screens'
 import { NavbarComponent } from './ui/components/navbar/navbar.component'
 import './App.css'
+import { DarkModeComponent } from './ui/components'
 
 function App() {
   return (
     <div className='app'>
       <NavbarComponent />
-      <HomeScreen />
-      <AboutScreen />
+      <DarkModeComponent />
+      <AboutMeScreen />
+      <ExperienceScreen />
+      <ProjectScreen />
       <ContactScreen />
     </div>
   )
 }
 
 export default App
+
+// sobre mim
+//experiencia
+//trabalhos
+//contato

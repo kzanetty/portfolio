@@ -3,17 +3,8 @@
   height: 100vh;
 }
 
-.home {
-  background-color: rgb(75, 2, 2);
+.about-me {
   margin-top: var(--height-nav-bar);
-}
-
-.about {
-  background-color: rgba(0, 128, 0, 0.068);
-}
-
-.contact {
-  background-color: rgba(0, 0, 255, 0.055);
 }
 
 .conteudos-screens {
@@ -21,4 +12,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: var(--body_color);
+}
+
+.screen-secondary {
+  background-color: var(--body_background_secondary);
 }
