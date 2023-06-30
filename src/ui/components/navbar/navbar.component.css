@@ -28,10 +28,9 @@
 .items-navbar > li > a {
   list-style: none;
   text-decoration: none;
-  color: var(--white-color);
   cursor: pointer;
 }
 
 .active {
-  border: 1px solid red;
+  color: var(--color-active);
 }

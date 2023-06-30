@@ -1,5 +1,6 @@
 import { HomeScreen, AboutScreen, ContactScreen } from './ui/screens'
 import { NavbarComponent } from './ui/components/navbar/navbar.component'
+import './App.css'
 
 function App() {
   return (

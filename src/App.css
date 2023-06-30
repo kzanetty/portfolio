@@ -9,8 +9,7 @@
   --white-color: #fff;
   --height-nav-bar: 48px;
   --navbar-color: #040c2c;
-
-  --border-test: 1px solid red;
+  --color-active: #e6bc05;
 }
 
 .app {
