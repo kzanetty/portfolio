@@ -1,5 +1,5 @@
-import "./style.css";
-import { ContainerComponent } from "../components";
+import "./experience.screen.css";
+import { ContainerComponent } from "../../components";
 
 export function ExperienceScreen() {
   return (

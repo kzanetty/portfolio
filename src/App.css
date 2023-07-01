@@ -16,6 +16,17 @@
   --body_active-color: #c2a48b;
 
   --height-nav-bar: 48px;
+
+  /* cor link */
+  --color-text-link: #7575eb;
+
+  /* Tamanho das palavras */
+  --size-title-large: 64px;
+  --size-title-small: 40px;
+  --size-caption-large: 40px;
+  --size-caption-small: 16px;
+  --size-text-large: 32px;
+  --size-text-small: 16px;
 }
 
 [data-theme="dark"] {
@@ -32,3 +43,22 @@
   min-height: 100vh;
   transition: all 0.8s ease-in-out;
 }
+
+/* Common Screens */
+.screen {
+  min-height: calc(100vh - var(--height-nav-bar));
+  height: 100vh;
+}
+
+.conteudos-screens {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--body_color);
+}
+
+.screen-secondary {
+  background-color: var(--body_background_secondary);
+}
+
+/* Commons Components */

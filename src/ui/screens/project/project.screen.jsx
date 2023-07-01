@@ -1,14 +1,12 @@
-import "./style.css";
-import { ContainerComponent } from "../components";
+import "./project.screen.css";
+import { ContainerComponent } from "../../components";
 
-export function AboutMeScreen() {
+export function ProjectScreen() {
   return (
-    <div id="/" className="screen about-me">
+    <div id="project" className="screen project">
       <ContainerComponent fullHeight={true}>
         <div className="conteudos-screens">
-          <h3>Olá, meu nome é </h3>
-          <h1>Henrique Zanetti</h1>
-          <h1>Sou um desenvolvedor full stack jr</h1>
+          <h1>projetos</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Blanditiis, facere atque unde optio hic ratione similique, quibusdam
@@ -19,7 +17,7 @@ export function AboutMeScreen() {
             repellendus, ullam dolor voluptatem laborum officia architecto
             praesentium eos!
           </p>
-          <button>Experiencias</button>
+          <button>Entrar em contato</button>
         </div>
       </ContainerComponent>
     </div>

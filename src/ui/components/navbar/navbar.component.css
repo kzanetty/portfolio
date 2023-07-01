@@ -52,3 +52,20 @@
   border: 2px solid red;
   display: flex;
 }
+
+.div-learn-more {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  max-width: 120px;
+  color: var(--color-text-link);
+}
+
+.div-learn-more:hover {
+  gap: 16px;
+}
+
+.div-learn-more > img {
+  width: 16px;
+}

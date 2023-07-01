@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
-import { ContainerComponent } from "../";
+import { ContainerComponent, LinkComponent } from "../";
 import "./navbar.component.css";
 import iconProgramacao from "../../../assets/icon-programacao.png";
 
@@ -22,55 +21,18 @@ export function NavbarComponent() {
       <ContainerComponent fullHeight={true}>
         <div className="content-navbar">
           <img src={iconProgramacao} alt="Icon de Programação" />
-
           <ul className="items-navbar">
             <li>
-              <Link
-                activeClass="active"
-                to="/"
-                spy={true}
-                smooth={true}
-                offset={-heightNavbar}
-                duration={1000}
-              >
-                Sobre mim
-              </Link>
+              <LinkComponent children={"Sobre mim"} to={"/"} heightNavbar={heightNavbar} />
             </li>
             <li>
-              <Link
-                activeClass="active"
-                to="experience"
-                spy={true}
-                smooth={true}
-                offset={-heightNavbar}
-                duration={1000}
-              >
-                Experiência
-              </Link>
+              <LinkComponent children={"Experiência"} to={"experience"} heightNavbar={heightNavbar} />
             </li>
             <li>
-              <Link
-                activeClass="active"
-                to="project"
-                spy={true}
-                smooth={true}
-                offset={-heightNavbar}
-                duration={1000}
-              >
-                Projetos
-              </Link>
+              <LinkComponent children={"Projetos"} to={"project"} heightNavbar={heightNavbar} />
             </li>
             <li>
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-heightNavbar}
-                duration={1000}
-              >
-                Contato
-              </Link>
+              <LinkComponent children={"Contato"} to={"contact"} heightNavbar={heightNavbar} />
             </li>
           </ul>
         </div>
