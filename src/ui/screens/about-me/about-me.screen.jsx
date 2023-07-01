@@ -1,7 +1,6 @@
 import "./about-me.screen.css"
 import { ContainerComponent, LinkComponent } from "../../components";
 import arrow from '../../../assets/arrow-saiba-mais.png'
-// import arrow from '../../../assets/arrow-saiba-mais.svg'
 import { useEffect, useState } from "react";
 
 export function AboutMeScreen() {
@@ -37,12 +36,8 @@ export function AboutMeScreen() {
             habilidades e conhecimentos como
             desenvolvedor.
           </p>
-          {/* <div className="div-learn-more">
-            <a href="#experience" className="link-learn-more">Ver experiencias <img src={arrow} alt="arrow" /></a>
-          </div> */}
           <div className="div-learn-more">
-            <LinkComponent children={"Experiência"} to={"experience"} heightNavbar={heightNavbar} />
-            <img src={arrow} alt="arrow" />
+            <LinkComponent to={"experience"} heightNavbar={heightNavbar} style={"link-experience"}>Experiencia <img src={arrow} alt="arrow" /> </LinkComponent>
           </div>
         </div>
       </ContainerComponent>

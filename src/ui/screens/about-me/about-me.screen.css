@@ -31,7 +31,7 @@
   display: flex;
 }
 
-.link-learn-more {
+.link-experience {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -40,6 +40,10 @@
   border-bottom: 3px solid transparent;
 }
 
-.link-learn-more:hover {
-  border-bottom: 3px solid rgb(48, 47, 47);
+.link-experience:hover {
+  gap: 16px;
+}
+
+.link-experience > img {
+  width: 16px;
 }

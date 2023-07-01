@@ -1,9 +1,10 @@
 import { Link } from "react-scroll";
 
-export function LinkComponent({ children, to, heightNavbar }) {
+export function LinkComponent({ children, to, heightNavbar, style }) {
     return (
         <>
             <Link
+                className={style}
                 activeClass="active"
                 to={to}
                 spy={true}
