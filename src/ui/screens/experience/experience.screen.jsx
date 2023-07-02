@@ -7,11 +7,10 @@ import { useEffect, useState } from "react";
 export function ExperienceScreen() {
   const [showFirstExperience, setShowFirstExperience] = useState(true)
   const [selectedClassName, setSelectedClassName] = useState("hiden-experience")
-  const [selectedButton, setSelectedButton] = useState('');
 
   function selectExperience(className) {
     setShowFirstExperience(false)
-    setSelectedButton(className);
+
     const elementsToHide = document.getElementsByClassName(selectedClassName);
     for (let i = 0; i < elementsToHide.length; i++) {
       elementsToHide[i].style.display = "none";
@@ -23,6 +22,16 @@ export function ExperienceScreen() {
     }
 
     setSelectedClassName(className)
+  }
+
+  function handleButtonClick(event) {
+    const buttons = document.querySelectorAll('[id^="button-"]');
+    buttons.forEach((button) => {
+      button.classList.remove("activeButton");
+    });
+
+    const button = event.target;
+    button.classList.add("activeButton");
   }
 
   useEffect(() => {
@@ -41,7 +50,7 @@ export function ExperienceScreen() {
 
           <div className="content-experience-reports">
             <div className="content-experience-titulos">
-              <RelatoTituloComponent experiencias={experiencias} onClick={selectExperience} selectedButton={selectedButton} />
+              <RelatoTituloComponent experiencias={experiencias} onClick={selectExperience} handleButtonClick={handleButtonClick} />
             </div>
 
             <div className="content-experience-relatos">

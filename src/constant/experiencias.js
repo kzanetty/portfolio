@@ -13,11 +13,28 @@ const experiencias = [
     ],
   },
   {
-    nome: "CWI software",
+    nome: "Estágio CWI software",
     titulo: "Estágio em CWI Software",
     periodo: "dez de 2022 - mai de 2023 · 6 meses",
     texto:
-      "Participei como estagiário no programa de capacitação Crescer, que reúne uma equipe excepcional de profissionais altamente qualificados, atuando como professores. O objetivo desse programa é capacitar e inserir novos talentos da área de tecnologia no mercado. Durante minha participação no Crescer, adquiri experiência em diversas áreas, incluindo:",
+      "Participei como estagiário no programa de capacitação Crescer, que reúne uma equipe excepcional de profissionais altamente qualificados, atuando como professores. O objetivo desse programa é capacitar e inserir novos talentos da área de tecnologia no mercado. Durante minha participação no Crescer, adquiri experiência em diversas áreas, incluindo - Participei como estagiário no programa de capacitação Crescer, que reúne uma equipe excepcional de profissionais altamente qualificados, atuando como professores. O objetivo desse programa é capacitar e inserir novos talentos da área de tecnologia no mercado. Durante minha participação no Crescer, adquiri experiência em diversas áreas, incluindo:",
+    tecnologias: [
+      "Métodologias ageis",
+      "Responsabilidade",
+      "Proatividade",
+      "Maior sensibilidade",
+      "Métodologias ageis",
+      "Responsabilidade",
+      "Proatividade",
+      "Maior sensibilidade",
+    ],
+  },
+  {
+    nome: "Trainee CWI software",
+    titulo: "Trainee em CWI Software",
+    periodo: "ago de 2022 - nov de 2022 · 4 meses",
+    texto:
+      "Durante esse período na CWI Software, adquiri conhecimentos em programação orientada a objetos com Java, incluindo a realização de testes unitários. Aprimorei minhas habilidades na criação de landing pages utilizando HTML, CSS e JavaScript, com testes unitários no front-end também. Além disso, aprimorei meus conhecimentos em bancos de dados relacionais e na escrita de consultas utilizando SQL. Utilizei o Git, juntamente com GitHub e GitLab, para o versionamento de código.",
     tecnologias: [
       "Métodologias ageis",
       "Responsabilidade",

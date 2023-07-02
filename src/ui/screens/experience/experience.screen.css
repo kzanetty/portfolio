@@ -16,14 +16,13 @@
   align-items: flex-start;
   padding: 8px;
   border: 5px solid blue;
-  height: 600px;
+  height: 450px;
 }
 
 .content-experience-titulos {
   width: 30%;
   display: flex;
   flex-direction: column;
-  /* border: 2px solid lightgreen; */
 }
 
 .content-experience-titulos > h1 {
@@ -31,7 +30,7 @@
   font-size: var(--size-title-small);
 }
 
-.content-experience-titulos > ul {
+.ul-button-title-experience {
   border-left: 4px solid var(--body_color);
   display: flex;
   flex-direction: column;
@@ -39,26 +38,35 @@
   padding: 8px 8px;
 }
 
-.content-experience-titulos > ul > li > button {
+.ul-button-title-experience > li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.button-title-experience {
   background-color: transparent;
   border: none;
   cursor: pointer;
   font-size: var(--size-text-small);
   font-weight: bold;
-  position: relative;
   color: var(--body_color);
 }
 
-.content-experience-titulos > ul > li > button:hover {
+.button-title-experience:hover {
   color: var(--body_active-color);
 }
 
-.content-experience-titulos > ul > li > button:hover::before {
+.activeButton {
+  color: var(--body_active-color);
+}
+
+.activeButton::before {
   content: "";
   position: absolute;
-  right: -200px;
+  right: 10px;
   bottom: 50%;
-  width: 150px;
+  width: 120px;
   width: calc();
   height: 1px;
   background-color: var(--body_color);
@@ -94,10 +102,4 @@
 .content-technologies {
   border: 5px solid yellow;
   flex: 1;
-}
-
-.teste {
-  color: red;
-  border-bottom: 10px solid red;
-  font-size: 50px;
 }

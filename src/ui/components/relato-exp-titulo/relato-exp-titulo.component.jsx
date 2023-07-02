@@ -1,12 +1,24 @@
 
-export function RelatoTituloComponent({ experiencias, onClick }) {
+export function RelatoTituloComponent({ experiencias, onClick, handleButtonClick }) {
     return (
         <>
             <h1>Experiencias</h1>
-            <ul>
+            <ul className="ul-button-title-experience">
                 {
                     experiencias.map((exp, index) => (
-                        <li key={index}><button className={`button-title button-${exp.nome}`} onClick={() => onClick(exp.nome)}>{exp.nome}</button></li>
+                        <li key={index} >
+                            <button
+                                className="button-title-experience"
+                                id="button-title"
+                                onClick={(e) => {
+                                    onClick(exp.nome);
+                                    handleButtonClick(e);
+                                }}
+                            >
+                                {exp.nome}
+                            </button>
+                            <p></p>
+                        </li>
                     ))
                 }
             </ul>
