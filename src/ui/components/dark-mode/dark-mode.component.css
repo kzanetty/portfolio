@@ -3,6 +3,7 @@
   top: 10px;
   left: 10px;
   display: flex;
+  z-index: 3;
 }
 
 .dark_mode_label {

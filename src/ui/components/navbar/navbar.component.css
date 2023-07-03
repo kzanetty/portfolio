@@ -4,6 +4,7 @@
   width: 100%;
   height: var(--height-nav-bar);
   background-color: var(--body_background_navbar);
+  z-index: 1;
 }
 
 .content-navbar {

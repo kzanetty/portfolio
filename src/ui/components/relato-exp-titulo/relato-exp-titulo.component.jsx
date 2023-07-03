@@ -8,7 +8,7 @@ export function RelatoTituloComponent({ experiencias, onClick, handleButtonClick
                     experiencias.map((exp, index) => (
                         <li key={index} >
                             <button
-                                className="button-title-experience"
+                                className={`button-title-experience button-${exp.nome}`}
                                 id="button-title"
                                 onClick={(e) => {
                                     onClick(exp.nome);
@@ -21,7 +21,7 @@ export function RelatoTituloComponent({ experiencias, onClick, handleButtonClick
                         </li>
                     ))
                 }
-            </ul>
+            </ul >
         </>
     )
 }

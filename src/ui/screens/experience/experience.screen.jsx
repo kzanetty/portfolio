@@ -34,13 +34,22 @@ export function ExperienceScreen() {
     button.classList.add("activeButton");
   }
 
-  useEffect(() => {
+  function setInitialExperienceToDisplay() {
     if (showFirstExperience) {
       const elementsToShow = document.getElementsByClassName(experiencias[0].nome);
       for (let i = 0; i < elementsToShow.length; i++) {
-        elementsToShow[i].style.display = "inline";
+        elementsToShow[i].style.display = "block";
+      }
+
+      const buttonToShow = document.getElementsByClassName(`button-${experiencias[0].nome}`);
+      for (let i = 0; i < buttonToShow.length; i++) {
+        buttonToShow[i].classList.add("activeButton");
       }
     }
+  }
+
+  useEffect(() => {
+    setInitialExperienceToDisplay()
   }, [showFirstExperience, selectedClassName])
 
   return (

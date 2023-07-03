@@ -6,7 +6,8 @@ export function RelatoExperienciaComponent({ experiencias }) {
                     <div className={`hiden-experience ${exp.nome}`} key={index}>
                         <h2>{exp.titulo}</h2>
                         <h3>{exp.periodo}</h3>
-                        <p>{exp.texto}</p>
+                        {/* Tag potencialmente perigosa - encontrar outra forma de fazer isso */}
+                        <p dangerouslySetInnerHTML={{ __html: exp.texto }}></p>
                         <div>
                             <ul>
                                 {

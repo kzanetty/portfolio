@@ -1,12 +1,16 @@
-
 export function TecnologiasComponent({ tecnologias }) {
     return (
         <>
             <h1>Tecnologias</h1>
-            <ul>
+            <ul className="ul-technologies">
                 {
                     tecnologias.map((tec, index) => (
-                        <li key={index}>{tec.nome}</li>
+                        <>
+                            <li key={index}>
+                                <img src={tec.image} alt="" />
+                                {tec.name}
+                            </li>
+                        </>
                     ))
                 }
             </ul>
