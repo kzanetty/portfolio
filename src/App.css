@@ -16,6 +16,8 @@
   --body_background_navbar: #fffacd;
   --body_hover_navbar: #ffffff81;
   --body_active-color: #c2a48b;
+  --body_card_project: #fff8dc;
+  --body_font_color_transparent: #0000006c;
 
   --height-nav-bar: 48px;
 
@@ -29,6 +31,7 @@
   --size-caption-small: 16px;
   --size-text-large: 32px;
   --size-text-small: 16px;
+  --size-text-tiny: 14px;
 }
 
 [data-theme="dark"] {
@@ -38,6 +41,8 @@
   --body_background_navbar: #807d7d;
   --body_hover_navbar: #504e4e79;
   --body_active-color: #e6bc05;
+  --body_card_project: #494741;
+  --body_font_color_transparent: #ffffff6b;
 }
 
 .app {
