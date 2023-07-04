@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { ContainerComponent, LinkComponent } from "../";
+import { ContainerComponent, LinkComponent, RenderIcon } from "../";
 import "./navbar.component.css";
-import iconProgramacao from "../../../assets/icon-programacao.png";
+import iconOptions from "../../../constant/icons";
 
 export function NavbarComponent() {
   const [heightNavbar, setHeightNavbar] = useState(null);
@@ -20,7 +20,11 @@ export function NavbarComponent() {
     <div id="navbar" className="navbar">
       <ContainerComponent fullHeight={true}>
         <div className="content-navbar">
-          <img src={iconProgramacao} alt="Icon de Programação" />
+          <RenderIcon
+            icon={iconOptions.PROGRAM}
+            alt="icon program"
+            width="auto"
+          />
           <ul className="items-navbar">
             <li>
               <LinkComponent

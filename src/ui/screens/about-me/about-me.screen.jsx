@@ -1,7 +1,11 @@
 import "./about-me.screen.css";
-import { ContainerComponent, LinkComponent } from "../../components";
-import arrow from "../../../assets/arrow-saiba-mais.png";
+import {
+  ContainerComponent,
+  LinkComponent,
+  RenderIcon,
+} from "../../components";
 import { useEffect, useState } from "react";
+import iconOptions from "../../../constant/icons";
 
 export function AboutMeScreen() {
   const [heightNavbar, setHeightNavbar] = useState(50);
@@ -36,7 +40,12 @@ export function AboutMeScreen() {
               heightNavbar={heightNavbar}
               style={"link-experience"}
             >
-              Experiencia <img src={arrow} alt="arrow" />
+              Experiencia
+              <RenderIcon
+                icon={iconOptions.ARROW}
+                alt="icon arrow"
+                width="16px"
+              />
             </LinkComponent>
           </div>
         </div>

@@ -4,12 +4,15 @@ import projects from "../../../constant/projects";
 
 export function ProjectScreen() {
   return (
-    <div id="project" className="screen project">
+    <div id="project" className="project">
       <ContainerComponent fullHeight={true}>
         <div className="screen-contents-projects">
-          {projects.map((project, index) => (
-            <CardProjectComponent project={project} key={index} />
-          ))}
+          <h1>Projetos</h1>
+          <div className="contents-projects">
+            {projects.map((project, index) => (
+              <CardProjectComponent project={project} key={index} />
+            ))}
+          </div>
         </div>
       </ContainerComponent>
     </div>

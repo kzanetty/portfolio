@@ -1,6 +1,7 @@
 import React from "react";
 import curriculo from "../../../assets/curriculo/CV-Henrique-Zanetti.pdf";
-import iconCurriculo from "../../../assets/icons/icon-curriculo.png";
+import iconOptions from "../../../constant/icons";
+import { RenderIcon } from "../icons/render-icon.component";
 
 export function DownloadComponent() {
   const handleDownload = () => {
@@ -12,11 +13,7 @@ export function DownloadComponent() {
 
   return (
     <div onClick={handleDownload} className="download-curriculo hover-behavior">
-      <img
-        src={iconCurriculo}
-        alt="icon curriculo"
-        className="default-width-for-icons"
-      />
+      <RenderIcon icon={iconOptions.CURRICULO} alt="icon curriculo" />
       <p>Curriculo</p>
     </div>
   );

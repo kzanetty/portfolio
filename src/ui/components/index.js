@@ -15,3 +15,4 @@ export { ButtonEstilizadoComponent } from "./button/button-estilizado/button.com
 
 export { CopyToClipboardComponent } from "./copy-paste/copy-to-clipboard.component";
 export { DownloadComponent } from "./download/download.component";
+export { RenderIcon } from "./icons/render-icon.component";
