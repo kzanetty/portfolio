@@ -1,0 +1,17 @@
+.button-estilizado {
+  width: 124px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+  transition: transform 0.1s;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.button-estilizado:hover {
+  scale: 1.2;
+  background-color: #dddbdb;
+}

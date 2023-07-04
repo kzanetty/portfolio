@@ -69,3 +69,31 @@
 }
 
 /* Commons Components */
+
+.default-width-for-icons {
+  width: 50px;
+}
+
+.hover-behavior {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hover-behavior:hover {
+  transform: scale(1.3);
+}
+
+/* Components pequenos */
+
+.download-curriculo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

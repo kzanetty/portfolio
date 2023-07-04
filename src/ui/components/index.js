@@ -8,3 +8,10 @@ export { RelatoExperienciaComponent } from "./relato-experiencia/relato-experien
 export { TecnologiasComponent } from "./relato-tecnologias/tecnologias.component";
 export { RelatoTituloComponent } from "./relato-exp-titulo/relato-exp-titulo.component";
 export { CardProjectComponent } from "./projects/card-project.component";
+export { FooterComponent } from "./footer/footer.component";
+export { FormularioComponent } from "./formulario/formulario.component";
+
+export { ButtonEstilizadoComponent } from "./button/button-estilizado/button.component";
+
+export { CopyToClipboardComponent } from "./copy-paste/copy-to-clipboard.component";
+export { DownloadComponent } from "./download/download.component";
