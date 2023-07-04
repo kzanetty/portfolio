@@ -12,13 +12,13 @@ const projects = [
     },
   },
   {
-    title: "Portfolio",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique, quibusdam neque voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis culpa.voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis",
+    title: "Meu Portfólio",
+    text: "Este projeto tem o intuito de servir como meu portfólio, apresentando meus projetos realizados e minhas competências.",
     technologies: ["React", "Javascript", "GitHub Pages"],
-    github: "https://github.com/kzanetty/application",
+    github: "https://github.com/kzanetty/portfolio",
     deploy: {
-      state: false,
-      path: "https://kzanetty.github.io/application/#/",
+      state: true,
+      path: "https://kzanetty.github.io/portfolio/",
     },
   },
   {
