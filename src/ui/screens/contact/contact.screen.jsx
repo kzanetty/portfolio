@@ -1,10 +1,14 @@
 import "./contact.screen.css";
-import { ContainerComponent, CopyToClipboardComponent, DownloadComponent, FooterComponent, FormularioComponent } from "../../components";
-import contacts from '../../../constant/contacts'
+import {
+  ContainerComponent,
+  CopyToClipboardComponent,
+  DownloadComponent,
+  FooterComponent,
+  FormularioComponent,
+} from "../../components";
+import contacts from "../../../constant/contacts";
 
 export function ContactScreen() {
-
-
   function renderContact(contact, index) {
     if (contact.name == "Email") {
       return (
@@ -12,19 +16,33 @@ export function ContactScreen() {
           <CopyToClipboardComponent
             information="hzanettik@gmail.com"
             text="Email"
-            children={<img src={contact.image} alt={contact.name} className='default-width-for-icons' />}
+            children={
+              <img
+                src={contact.image}
+                alt={contact.name}
+                className="default-width-for-icons"
+              />
+            }
           />
         </li>
-      )
+      );
     }
     return (
       <li key={index}>
-        <a href={contact.path} target="_blank" className="contact-option hover-behavior">
-          <img src={contact.image} alt={contact.name} className='default-width-for-icons' />
+        <a
+          href={contact.path}
+          target="_blank"
+          className="contact-option hover-behavior"
+        >
+          <img
+            src={contact.image}
+            alt={contact.name}
+            className="default-width-for-icons"
+          />
           <p>{contact.name}</p>
         </a>
       </li>
-    )
+    );
   }
 
   return (
@@ -35,22 +53,19 @@ export function ContactScreen() {
           <div className="contact-screen-contacts">
             <div className="container-form-contact">
               <FormularioComponent />
-
             </div>
             <div className="icon-contacts-screen">
               <ul>
-                {
-                  contacts.map((contact, index) => (
-                    renderContact(contact, index)
-                  ))
-                }
+                {contacts.map((contact, index) =>
+                  renderContact(contact, index)
+                )}
                 <DownloadComponent />
               </ul>
             </div>
           </div>
           <FooterComponent />
         </div>
-      </ContainerComponent >
-    </div >
+      </ContainerComponent>
+    </div>
   );
 }

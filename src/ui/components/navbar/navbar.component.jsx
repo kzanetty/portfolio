@@ -4,11 +4,11 @@ import "./navbar.component.css";
 import iconProgramacao from "../../../assets/icon-programacao.png";
 
 export function NavbarComponent() {
-  const [heightNavbar, setHeightNavbar] = useState(50);
+  const [heightNavbar, setHeightNavbar] = useState(null);
 
   function getHeightNavBar() {
     const navbarElement = document.getElementById("navbar");
-    const valueHeightNavbar = navbarElement.offsetHeight + 1;
+    const valueHeightNavbar = navbarElement.offsetHeight;
     setHeightNavbar(valueHeightNavbar);
   }
 
@@ -23,16 +23,32 @@ export function NavbarComponent() {
           <img src={iconProgramacao} alt="Icon de Programação" />
           <ul className="items-navbar">
             <li>
-              <LinkComponent children={"Sobre mim"} to={"/"} heightNavbar={heightNavbar} />
+              <LinkComponent
+                children={"Sobre mim"}
+                to={"/"}
+                heightNavbar={heightNavbar}
+              />
             </li>
             <li>
-              <LinkComponent children={"Experiência"} to={"experience"} heightNavbar={heightNavbar} />
+              <LinkComponent
+                children={"Experiência"}
+                to={"experience"}
+                heightNavbar={heightNavbar}
+              />
             </li>
             <li>
-              <LinkComponent children={"Projetos"} to={"project"} heightNavbar={heightNavbar} />
+              <LinkComponent
+                children={"Projetos"}
+                to={"project"}
+                heightNavbar={heightNavbar}
+              />
             </li>
             <li>
-              <LinkComponent children={"Contato"} to={"contact"} heightNavbar={heightNavbar} />
+              <LinkComponent
+                children={"Contato"}
+                to={"contact"}
+                heightNavbar={heightNavbar}
+              />
             </li>
           </ul>
         </div>

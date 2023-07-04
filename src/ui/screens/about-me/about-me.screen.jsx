@@ -1,6 +1,6 @@
-import "./about-me.screen.css"
+import "./about-me.screen.css";
 import { ContainerComponent, LinkComponent } from "../../components";
-import arrow from '../../../assets/arrow-saiba-mais.png'
+import arrow from "../../../assets/arrow-saiba-mais.png";
 import { useEffect, useState } from "react";
 
 export function AboutMeScreen() {
@@ -23,21 +23,21 @@ export function AboutMeScreen() {
           <p className="title-about-me">Henrique Zanetti</p>
           <p className="title-about-me">Sou um desenvolvedor full stack jr</p>
           <p className="text-about-me">
-            Sou um desenvolvedor full-stack
-            que está sempre buscando pensar
-            de forma criativa e eficiente. Tenho
-            experiência em desenvolvimento
-            de aplicações web trabalhando
-            com .NET, Spring e React e
-            experiência com trabalho em
-            equipe. Estou em busca de novos
-            desafios e oportunidades para
-            continuar a desenvolver minhas
-            habilidades e conhecimentos como
-            desenvolvedor.
+            Sou um desenvolvedor full-stack que está sempre buscando pensar de
+            forma criativa e eficiente. Tenho experiência em desenvolvimento de
+            aplicações web trabalhando com .NET, Spring e React e experiência
+            com trabalho em equipe. Estou em busca de novos desafios e
+            oportunidades para continuar a desenvolver minhas habilidades e
+            conhecimentos como desenvolvedor.
           </p>
           <div className="div-learn-more">
-            <LinkComponent to={"experience"} heightNavbar={heightNavbar} style={"link-experience"}>Experiencia <img src={arrow} alt="arrow" /> </LinkComponent>
+            <LinkComponent
+              to={"experience"}
+              heightNavbar={heightNavbar}
+              style={"link-experience"}
+            >
+              Experiencia <img src={arrow} alt="arrow" />
+            </LinkComponent>
           </div>
         </div>
       </ContainerComponent>
