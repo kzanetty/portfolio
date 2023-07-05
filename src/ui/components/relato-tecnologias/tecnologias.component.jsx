@@ -1,3 +1,5 @@
+import { RenderIcon } from "../icons/render-icon.component";
+
 export function TecnologiasComponent({ tecnologias }) {
   return (
     <>
@@ -5,7 +7,10 @@ export function TecnologiasComponent({ tecnologias }) {
       <ul className="ul-technologies">
         {tecnologias.map((tec, index) => (
           <li key={index}>
-            <img src={tec.image} alt="technology image" />
+            <RenderIcon
+              icon={tec.image}
+              alt={`icon ${tec.name}`}
+            />
             {tec.name}
           </li>
         ))}

@@ -2,7 +2,7 @@ import "./contact.screen.css";
 import {
   ContainerComponent,
   CopyToClipboardComponent,
-  DownloadComponent,
+  CurriculoComponent,
   FooterComponent,
   FormularioComponent,
 } from "../../components";
@@ -59,7 +59,7 @@ export function ContactScreen() {
                 {contacts.map((contact, index) =>
                   renderContact(contact, index)
                 )}
-                <DownloadComponent />
+                <CurriculoComponent />
               </ul>
             </div>
           </div>

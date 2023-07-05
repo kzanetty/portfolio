@@ -5,7 +5,6 @@ export function RelatoTituloComponent({
 }) {
   return (
     <>
-      <h1>Experiencias</h1>
       <ul className="ul-button-title-experience">
         {experiencias.map((exp, index) => (
           <li key={index}>

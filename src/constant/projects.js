@@ -1,4 +1,4 @@
-// Maximo de caracteres: 310
+// Maximo de caracteres: 260
 
 const projects = [
   {
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Portfolio",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique, quibusdam neque voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis culpa.voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis",
+    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique, quibusdam neque voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis culpa.",
     technologies: ["React", "Javascript", "GitHub Pages"],
     github: "https://github.com/kzanetty/application",
     deploy: {
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: "Portfolio",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique, quibusdam neque voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis culpa.voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis",
+    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique, quibusdam neque voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque.",
     technologies: ["React", "Javascript", "GitHub Pages"],
     github: "https://github.com/kzanetty/application",
     deploy: {

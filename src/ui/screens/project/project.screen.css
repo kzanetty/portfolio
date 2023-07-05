@@ -20,8 +20,8 @@
   flex-direction: column;
   gap: 12px;
   background-color: var(--body_card_project);
-  width: 350px;
-  height: 350px;
+  width: 380px;
+  height: 400px;
   border-radius: 8px;
   padding: 8px;
   color: var(--body_color);
@@ -62,6 +62,8 @@
 .card-project-text {
   padding-right: 2px;
   height: 200px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .card-project-technologies {
@@ -71,6 +73,7 @@
 }
 
 .card-project-technologies > li {
-  font-size: var(--size-text-tiny);
+  font-size: var(--size-text-small);
   color: var(--body_font_color_transparent);
+  font-style: italic;
 }

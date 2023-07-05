@@ -14,5 +14,5 @@ export { FormularioComponent } from "./formulario/formulario.component";
 export { ButtonEstilizadoComponent } from "./button/button-estilizado/button.component";
 
 export { CopyToClipboardComponent } from "./copy-paste/copy-to-clipboard.component";
-export { DownloadComponent } from "./download/download.component";
+export { CurriculoComponent } from "./open-curriculo/curriculo.component";
 export { RenderIcon } from "./icons/render-icon.component";

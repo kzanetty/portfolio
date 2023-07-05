@@ -63,23 +63,23 @@ export function ExperienceScreen() {
   }, [showFirstExperience, selectedClassName]);
 
   return (
-    <div id="experience" className="screen screen-secondary experience">
+    <div id="experience" className="screen-secondary experience">
+      {/* <div id="experience" className="screen screen-secondary experience"> */}
       <ContainerComponent fullHeight={true}>
         <div className="content-experience">
           <div className="content-experience-reports">
             <div className="content-experience-titulos">
+              <h1>Experiencias</h1>
               <RelatoTituloComponent
                 experiencias={experiencias}
                 onClick={selectExperience}
                 handleButtonClick={handleButtonClick}
               />
             </div>
-
             <div className="content-experience-relatos">
               <RelatoExperienciaComponent experiencias={experiencias} />
             </div>
           </div>
-
           <div className="content-technologies">
             <TecnologiasComponent tecnologias={tecnologias} />
           </div>
