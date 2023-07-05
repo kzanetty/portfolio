@@ -3,10 +3,8 @@ import {
   ContainerComponent,
   RelatoExperienciaComponent,
   RelatoTituloComponent,
-  TecnologiasComponent,
 } from "../../components";
 import experiencias from "../../../constant/experiencias";
-import tecnologias from "../../../constant/tecnologias";
 import { useEffect, useState } from "react";
 
 export function ExperienceScreen() {
@@ -64,24 +62,18 @@ export function ExperienceScreen() {
 
   return (
     <div id="experience" className="screen-secondary experience">
-      {/* <div id="experience" className="screen screen-secondary experience"> */}
       <ContainerComponent fullHeight={true}>
         <div className="content-experience">
-          <div className="content-experience-reports">
-            <div className="content-experience-titulos">
-              <h1>Experiencias</h1>
-              <RelatoTituloComponent
-                experiencias={experiencias}
-                onClick={selectExperience}
-                handleButtonClick={handleButtonClick}
-              />
-            </div>
-            <div className="content-experience-relatos">
-              <RelatoExperienciaComponent experiencias={experiencias} />
-            </div>
+          <div className="content-experience-titulos">
+            <h1>Experiencias</h1>
+            <RelatoTituloComponent
+              experiencias={experiencias}
+              onClick={selectExperience}
+              handleButtonClick={handleButtonClick}
+            />
           </div>
-          <div className="content-technologies">
-            <TecnologiasComponent tecnologias={tecnologias} />
+          <div className="content-experience-relatos">
+            <RelatoExperienciaComponent experiencias={experiencias} />
           </div>
         </div>
       </ContainerComponent>

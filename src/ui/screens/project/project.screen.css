@@ -3,7 +3,8 @@
 }
 
 .screen-contents-projects > h1 {
-  margin: 12px 0;
+  margin: 32px 0;
+  font-size: var(--size-text-big);
 }
 
 .contents-projects {
@@ -62,8 +63,8 @@
 .card-project-text {
   padding-right: 2px;
   height: 200px;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: var(--size-text-medium-small);
+  line-height: var(--size-text-line-height-medium);
 }
 
 .card-project-technologies {

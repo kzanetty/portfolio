@@ -1,5 +1,7 @@
 .about-me {
   margin-top: var(--height-nav-bar);
+  min-height: calc(100vh - var(--height-nav-bar));
+  height: 100vh;
 }
 
 .content-about-me {
@@ -22,30 +24,14 @@
 
 .text-about-me {
   margin-top: 40px;
-  font-size: var(--size-text-small);
-  margin-bottom: 1.5em;
-  line-height: 1.4em;
+  font-size: var(--size-text-medium);
+  margin-bottom: 32px;
+  line-height: var(--size-text-line-height-medium);
 }
 
 .div-learn-more {
   display: flex;
-}
-
-.link-experience {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--color-text-link);
-  border-bottom: 3px solid transparent;
-}
-
-.link-experience:hover {
-  gap: 16px;
-}
-
-.link-experience > img {
-  width: 16px;
+  margin: 32px 0 16px 0;
 }
 
 .div-learn-more {
@@ -54,7 +40,6 @@
   gap: 12px;
   cursor: pointer;
   max-width: 120px;
-  color: var(--color-text-link);
 }
 
 .div-learn-more:hover {
@@ -63,4 +48,32 @@
 
 .div-learn-more > img {
   width: 16px;
+}
+
+.link-experience {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-link);
+  font-size: var(--size-text-medium);
+}
+
+.link-experience:hover {
+  gap: 16px;
+}
+
+/* technologies section */
+
+.ul-technologies {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.ul-technologies > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
 }

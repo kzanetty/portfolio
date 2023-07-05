@@ -7,7 +7,7 @@ export function ProjectScreen() {
     <div id="project" className="project">
       <ContainerComponent fullHeight={true}>
         <div className="screen-contents-projects">
-          <h1>Projetos</h1>
+          <h1>Projetos públicos</h1>
           <div className="contents-projects">
             {projects.map((project, index) => (
               <CardProjectComponent project={project} key={index} />

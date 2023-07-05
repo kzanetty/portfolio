@@ -33,11 +33,10 @@ const tecnologias = [
     name: "CSS",
     image: iconOptions.CSS,
   },
-
-  {
-    name: "Sql ",
-    image: iconOptions.SQL,
-  },
+  // {
+  //   name: "Sql ",
+  //   image: iconOptions.SQL,
+  // },
   {
     name: "MySQL",
     image: iconOptions.MYSQL,

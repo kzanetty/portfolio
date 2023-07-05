@@ -49,7 +49,6 @@ export function ContactScreen() {
     <div id="contact" className="screen screen-secondary contact">
       <ContainerComponent fullHeight={true}>
         <div className="contact-screen-content">
-          {/* <h1 className="title-contact-screen-content">Formas de contato</h1> */}
           <div className="contact-screen-contacts">
             <div className="container-form-contact">
               <FormularioComponent />

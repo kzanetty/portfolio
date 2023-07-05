@@ -3,9 +3,12 @@ import {
   ContainerComponent,
   LinkComponent,
   RenderIcon,
+  TecnologiasComponent,
 } from "../../components";
 import { useEffect, useState } from "react";
 import iconOptions from "../../../constant/icons";
+import tecnologias from "../../../constant/tecnologias";
+import about from "../../../constant/about";
 
 export function AboutMeScreen() {
   const [heightNavbar, setHeightNavbar] = useState(50);
@@ -20,20 +23,16 @@ export function AboutMeScreen() {
     getHeightNavBar();
   }, []);
   return (
-    <div id="/" className="screen about-me">
+    <div id="/" className="about-me">
       <ContainerComponent fullHeight={true}>
         <div className="content-about-me">
           <h3 className="caption-about-me">Olá, meu nome é </h3>
-          <p className="title-about-me">Henrique Zanetti</p>
-          <p className="title-about-me">Sou um desenvolvedor full stack jr</p>
-          <p className="text-about-me">
-            Sou um desenvolvedor full-stack que está sempre buscando pensar de
-            forma criativa e eficiente. Tenho experiência em desenvolvimento de
-            aplicações web trabalhando com .NET, Spring e React e experiência
-            com trabalho em equipe. Estou em busca de novos desafios e
-            oportunidades para continuar a desenvolver minhas habilidades e
-            conhecimentos como desenvolvedor.
-          </p>
+          <p className="title-about-me">{about.NAME}</p>
+          <p className="title-about-me">{about.TITLE}</p>
+          <p className="text-about-me">{about.TEXT}</p>
+          <div className="content-technologies">
+            <TecnologiasComponent tecnologias={tecnologias} />
+          </div>
           <div className="div-learn-more">
             <LinkComponent
               to={"experience"}

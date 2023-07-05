@@ -1,12 +1,8 @@
 .contact-screen-content {
   height: 100%;
   position: relative;
+  color: var(--body_color);
 }
-
-/* .title-contact-screen-content {
-  text-align: center;
-  margin: 10px;
-} */
 
 .contact-screen-contacts {
   height: calc(100% - 40px);
@@ -47,6 +43,10 @@
   align-items: center;
   width: auto;
   gap: 8px;
+}
+
+.contact-option > p {
+  color: var(--body_color);
 }
 
 .image-icons-contacts {

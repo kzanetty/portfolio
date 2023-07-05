@@ -5,8 +5,8 @@ import { RenderIcon } from "../icons/render-icon.component";
 
 export function CurriculoComponent() {
   function handlecurriculo() {
-    window.open(curriculo, '_blank');
-  };
+    window.open(curriculo, "_blank");
+  }
 
   return (
     <div onClick={handlecurriculo} className="open-curriculo hover-behavior">

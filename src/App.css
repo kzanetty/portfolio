@@ -21,14 +21,27 @@
   --height-nav-bar: 48px;
   /* cor link */
   --color-text-link: #7575eb;
+
   /* Tamanho das palavras */
   --size-title-large: 64px;
-  --size-title-small: 40px;
+  --size-title-medium: 52px;
+  --size-title-small: 46px;
+  --size-title-tiny: 40px;
+
   --size-caption-large: 40px;
   --size-caption-small: 16px;
+
   --size-text-large: 32px;
+  --size-text-big: 24px;
+  --size-text-medium: 20px;
+  --size-text-medium-small: 18px;
   --size-text-small: 16px;
   --size-text-tiny: 14px;
+  --size-text-too-tiny: 8px;
+
+  --size-text-line-height-large: 32px;
+  --size-text-line-height-medium: 28px;
+  --size-text-line-height-small: 24px;
 }
 
 [data-theme="dark"] {
@@ -44,7 +57,7 @@
 
 .app {
   background-color: var(--body_background);
-  min-height: 100vh;
+  height: 100vh;
   transition: all 0.8s ease-in-out;
 }
 
@@ -63,6 +76,10 @@
 
 .screen-secondary {
   background-color: var(--body_background_secondary);
+}
+
+.color-text {
+  color: var(--body_color);
 }
 
 /* Commons Components */

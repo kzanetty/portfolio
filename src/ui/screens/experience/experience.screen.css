@@ -1,22 +1,15 @@
 .experience {
   min-height: calc(100vh - var(--height-nav-bar));
+  /* height: 100vh; */
   color: var(--body_color);
   padding: 52px 0;
 }
 
 .content-experience {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.content-experience-reports {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 8px;
-  min-height: 700px;
 }
 
 .content-experience-titulos {
@@ -25,6 +18,7 @@
   flex-direction: column;
 }
 
+/* TEXTO AQUI */
 .content-experience-titulos > h1 {
   margin-bottom: 32px;
   font-size: var(--size-title-small);
@@ -48,7 +42,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: var(--size-text-medium);
   font-weight: bold;
   color: var(--body_color);
 }
@@ -78,7 +72,7 @@
 
 .content-experience-relatos > div > h2 {
   margin-bottom: 8px;
-  font-size: 32px;
+  font-size: var(--size-text-large);
 }
 
 .content-experience-relatos > div > h3 {
@@ -88,8 +82,8 @@
 
 .content-experience-relatos > div > p {
   margin-bottom: 16px;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: var(--size-text-medium);
+  line-height: var(--size-text-line-height-large);
 }
 
 .content-experience-relatos > div > div > ul {
@@ -100,40 +94,9 @@
   flex-wrap: wrap;
   gap: 24px;
   font-weight: bold;
+  font-size: var(--size-text-small);
 }
 
 .hiden-experience {
   display: none;
-}
-
-/* technologies section */
-
-.content-technologies {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-
-.content-technologies > h1 {
-  margin: 24px 0 16px 0;
-}
-
-.ul-technologies {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.ul-technologies > li {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: center;
-}
-
-.ul-technologies > li > img {
-  width: 50px;
 }
