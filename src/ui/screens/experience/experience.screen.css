@@ -1,6 +1,5 @@
 .experience {
   min-height: calc(100vh - var(--height-nav-bar));
-  /* height: 100vh; */
   color: var(--body_color);
   padding: 52px 0;
 }
@@ -18,7 +17,6 @@
   flex-direction: column;
 }
 
-/* TEXTO AQUI */
 .content-experience-titulos > h1 {
   margin-bottom: 32px;
   font-size: var(--size-title-small);
@@ -45,6 +43,7 @@
   font-size: var(--size-text-medium);
   font-weight: bold;
   color: var(--body_color);
+  text-align: start;
 }
 
 .button-title-experience:hover {
@@ -61,7 +60,6 @@
   right: 10px;
   bottom: 50%;
   width: 100px;
-  width: calc();
   height: 1px;
   background-color: var(--body_color);
 }
@@ -99,4 +97,39 @@
 
 .hiden-experience {
   display: none;
+}
+
+@media (max-width: 1400px) {
+  .experience {
+    padding: 16px 8px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .content-experience-titulos > h1 {
+    font-size: var(--size-text-large);
+  }
+  .activeButton::before {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .content-experience-titulos > h1 {
+    font-size: var(--size-text-large);
+  }
+  .activeButton::before {
+    width: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .content-experience {
+    flex-direction: column;
+    gap: 52px;
+  }
+
+  .content-experience-relatos {
+    width: auto;
+  }
 }

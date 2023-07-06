@@ -16,8 +16,6 @@
   padding: 10px 0;
 }
 
-/* component */
-
 .card-project-component {
   display: flex;
   flex-direction: column;
@@ -79,4 +77,33 @@
   font-size: var(--size-text-small);
   color: var(--body_font_color_transparent);
   font-style: italic;
+}
+
+@media (max-width: 1400px) {
+  .project {
+    padding: 32px 8px;
+  }
+}
+
+@media (max-width: 1215px) {
+  .project {
+    padding: 32px 8px;
+  }
+
+  .screen-contents-projects > h1 {
+    text-align: center;
+  }
+
+  .contents-projects {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-project-text {
+    height: auto;
+  }
+  .card-project-component {
+    height: auto;
+  }
 }

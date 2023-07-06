@@ -1,8 +1,13 @@
-.contact-screen-content {
+.contact {
   min-height: calc(100vh - var(--height-nav-bar));
-  height: 100vh;
-  position: relative;
   color: var(--body_color);
+  height: 100vh;
+}
+
+.contact-screen-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-screen-contacts {
@@ -16,8 +21,6 @@
 
 .footer-component {
   height: 40px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -52,4 +55,44 @@
 
 .image-icons-contacts {
   width: 50px;
+}
+
+@media (max-width: 1400px) {
+  .contact-screen-content {
+    padding: 32px 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-screen-content {
+    gap: 52px;
+  }
+
+  .contact-screen-contacts {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 52px;
+  }
+
+  .icon-contacts-screen > ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .icon-contacts-screen {
+    width: 100%;
+  }
+
+  .container-form-contact {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    height: auto;
+  }
+  .container-form-contact {
+    width: 90%;
+  }
 }

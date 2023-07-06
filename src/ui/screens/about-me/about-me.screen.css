@@ -1,6 +1,6 @@
 .about-me {
-  margin-top: var(--height-nav-bar);
-  min-height: calc(100vh - var(--height-nav-bar));
+  margin-top: var(--height-nav-bar-fixed);
+  min-height: calc(100vh - var(--height-nav-bar-fixed));
   height: 100vh;
 }
 
@@ -62,8 +62,6 @@
   gap: 16px;
 }
 
-/* technologies section */
-
 .ul-technologies {
   display: flex;
   gap: 32px;
@@ -76,4 +74,33 @@
   justify-content: space-between;
   gap: 12px;
   align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .about-me {
+    padding: 18px 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-me {
+    height: auto;
+  }
+}
+
+@media (max-width: 510px) {
+  .title-about-me {
+    font-size: var(--size-title-small);
+  }
+}
+
+@media (max-width: 510px) {
+  .title-about-me {
+    font-size: var(--size-title-tiny);
+  }
+}
+@media (max-width: 330px) {
+  .title-about-me {
+    font-size: var(--size-text-big);
+  }
 }

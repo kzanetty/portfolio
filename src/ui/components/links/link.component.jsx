@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 
-export function LinkComponent({ children, to, heightNavbar, style }) {
+export function LinkComponent({ children, to, heightNavbar, style, onClick }) {
   return (
     <>
       <Link
@@ -11,6 +11,7 @@ export function LinkComponent({ children, to, heightNavbar, style }) {
         smooth={true}
         offset={-heightNavbar}
         duration={1000}
+        onClick={onClick}
       >
         {children}
       </Link>

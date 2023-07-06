@@ -11,17 +11,17 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 4px 0;
+  align-items: center;
+  padding: 3px 0;
 }
 
 .items-navbar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 10%;
+  gap: 32px;
   color: var(--body_color);
   height: 100%;
-  width: 60%;
 }
 
 .items-navbar > li {
@@ -47,8 +47,65 @@
   border-bottom: 2px solid rgba(53, 52, 52, 0.205);
 }
 
-.icon-programacao {
-  height: 100%;
-  border: 2px solid red;
+.logo-navbar {
+  height: 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-navbar > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .navbar {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .items-navbar {
+    flex-direction: column;
+    display: none;
+    background-color: var(--body_background_navbar);
+    padding: 16px;
+  }
+
+  .navbar.menu-open .items-navbar {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+    color: var(--body_color);
+    font-weight: bold;
+    border: none;
+  }
+}
+
+@media (max-width: 200px) {
+  .logo-navbar > img {
+    display: none;
+  }
+  .menu-toggle {
+    top: 5px;
+    right: 40%;
+  }
 }

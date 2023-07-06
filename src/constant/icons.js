@@ -21,6 +21,7 @@ import iconCurriculo from "../assets/icons/icon-curriculo.png";
 import iconExtern from "../assets/icons/icon-extern.png";
 import iconArrow from "../assets/icons/icon-arrow.png";
 import iconProgram from "../assets/icons/icon-programacao.png";
+import iconMenu from "../assets/icons/icon-menu.png";
 
 const iconOptions = {
   SPRING: iconSpring,
@@ -46,6 +47,7 @@ const iconOptions = {
   EXTERN: iconExtern,
   PROGRAM: iconProgram,
   ARROW: iconArrow,
+  MENU: iconMenu,
 };
 
 export default iconOptions;

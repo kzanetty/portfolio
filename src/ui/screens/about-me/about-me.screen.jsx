@@ -23,7 +23,7 @@ export function AboutMeScreen() {
     getHeightNavBar();
   }, []);
   return (
-    <div id="/" className="about-me background-color-first">
+    <div id="/" className="about-me background-color-first padding-responsividade">
       <ContainerComponent fullHeight={true}>
         <div className="content-about-me">
           <h3 className="caption-about-me">Olá, meu nome é </h3>

@@ -1,7 +1,9 @@
 .dark_mode {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  /* top: 10px;
+  left: 10px; */
+  bottom: 10px;
+  right: 10px;
   display: flex;
   z-index: 3;
 }
