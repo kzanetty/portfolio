@@ -101,7 +101,7 @@
 
 @media (max-width: 1400px) {
   .experience {
-    padding: 16px 8px;
+    padding: 32px 8px;
   }
 }
 
@@ -115,6 +115,9 @@
 }
 
 @media (max-width: 1060px) {
+  .content-experience-titulos {
+    width: auto;
+  }
   .content-experience-titulos > h1 {
     font-size: var(--size-text-large);
   }

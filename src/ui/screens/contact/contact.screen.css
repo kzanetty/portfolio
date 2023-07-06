@@ -59,7 +59,7 @@
 
 @media (max-width: 1400px) {
   .contact-screen-content {
-    padding: 32px 8px;
+    padding: 32px 8px 0;
   }
 }
 

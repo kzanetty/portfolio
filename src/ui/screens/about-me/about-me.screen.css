@@ -74,11 +74,12 @@
   justify-content: space-between;
   gap: 12px;
   align-items: center;
+  width: 100px;
 }
 
 @media (max-width: 1400px) {
   .about-me {
-    padding: 18px 8px;
+    padding: 18px 8px 52px;
   }
 }
 

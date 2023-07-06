@@ -4,19 +4,24 @@ import {
   ProjectScreen,
   ContactScreen,
 } from "./ui/screens";
-import { NavbarComponent } from "./ui/components/navbar/navbar.component";
 import "./App.css";
-import { DarkModeComponent } from "./ui/components";
+import { DarkModeComponent, ToastrComponent, NavbarComponent } from "./ui/components";
+import { GlobalToastrProvider } from "./context/toastr/toastr.context";
+
 
 function App() {
   return (
     <div className="app">
-      <NavbarComponent />
-      <DarkModeComponent />
-      <AboutMeScreen />
-      <ExperienceScreen />
-      <ProjectScreen />
-      <ContactScreen />
+      <GlobalToastrProvider>
+        <ToastrComponent />
+        <NavbarComponent />
+        <DarkModeComponent />
+        <AboutMeScreen />
+        <ExperienceScreen />
+        <ProjectScreen />
+        <ContactScreen />
+      </GlobalToastrProvider>
+
     </div>
   );
 }

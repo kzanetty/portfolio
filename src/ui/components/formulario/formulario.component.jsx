@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./formulario.component.css";
 import EmailJs from "@emailjs/browser";
-// import { useToastrHook } from '../../../hooks/toastr/use-toastr.hook';
+import { useToastrHook } from '../../../hooks/toastr/use-toastr.hook';
 import { validateEmail } from "../../../validate/validarEmail.validate";
 import { ButtonEstilizadoComponent } from "../button/button-estilizado/button.component";
 
@@ -9,27 +9,27 @@ export function FormularioComponent() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  // const { showToastrSucesso, showToastrFalha } = useToastrHook();
+  const { showToastrSucesso, showToastrFalha } = useToastrHook();
 
-  // function validate() {
-  //     if (name === "" || name == null || name == undefined) {
-  //         showToastrFalha("Você deve informar seu nome para enviar um email.");
-  //         return false;
-  //     }
-  //     if (email === "" || email == null || email == undefined) {
-  //         showToastrFalha("Você deve informar seu email.");
-  //         return false;
-  //     }
-  //     if (!validateEmail(email)) {
-  //         showToastrFalha("Informe um email valido.");
-  //         return false;
-  //     }
-  //     if (message === "" || message == null || message == undefined) {
-  //         showToastrFalha("Você deve escrever uma mensagem descrevendo a situação da sua maquina.");
-  //         return false;
-  //     }
-  //     return true;
-  // }
+  function validate() {
+    if (name === "" || name == null || name == undefined) {
+      showToastrFalha("Você deve informar seu nome para enviar um email.");
+      return false;
+    }
+    if (email === "" || email == null || email == undefined) {
+      showToastrFalha("Você deve informar seu email.");
+      return false;
+    }
+    if (!validateEmail(email)) {
+      showToastrFalha("Informe um email valido.");
+      return false;
+    }
+    if (message === "" || message == null || message == undefined) {
+      showToastrFalha("Você deve escrever uma mensagem.");
+      return false;
+    }
+    return true;
+  }
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -44,14 +44,14 @@ export function FormularioComponent() {
     }
 
     try {
-      // a public key "ep23mfwaxtizuOJQM" foi resetada, colocar a nova key após consertar o bug das rotas em produção.
-      //await EmailJs.send("service_jxu4gqt", "template_nwxiwll", templateParams, "ep23mfwaxtizuOJQM")
+      // Necessario usar algum tipo de mecanismo para protejer esses dados sensiveis.
+      await EmailJs.send("service_jxu4gqt", "template_nwxiwll", templateParams, "W9CIO17rY4lQVlRdk")
       setName("");
       setEmail("");
       setMessage("");
-      // showToastrSucesso("Email enviado - Envio pausado até corrigir bugs")
+      showToastrSucesso("Email enviado")
     } catch (error) {
-      // showToastrFalha("Error: " + error);
+      showToastrFalha("Error: " + error);
     }
   }
 
