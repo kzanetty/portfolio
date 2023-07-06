@@ -39,10 +39,11 @@
   font-size: 20px;
   padding: 4px 8px;
   transition: all 1.8s ease;
+  font-weight: bold;
 }
 
 .active {
-  color: var(--body_active-color);
+  color: var(--body_active_navbar-color);
   border-bottom: 2px solid rgba(53, 52, 52, 0.205);
 }
 

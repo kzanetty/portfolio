@@ -1,5 +1,6 @@
 .contact-screen-content {
-  height: 100%;
+  min-height: calc(100vh - var(--height-nav-bar));
+  height: 100vh;
   position: relative;
   color: var(--body_color);
 }

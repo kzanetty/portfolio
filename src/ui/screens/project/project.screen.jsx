@@ -4,7 +4,7 @@ import projects from "../../../constant/projects";
 
 export function ProjectScreen() {
   return (
-    <div id="project" className="project">
+    <div id="project" className="project background-color-first">
       <ContainerComponent fullHeight={true}>
         <div className="screen-contents-projects">
           <h1>Projetos públicos</h1>

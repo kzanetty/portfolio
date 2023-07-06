@@ -61,7 +61,7 @@ export function ExperienceScreen() {
   }, [showFirstExperience, selectedClassName]);
 
   return (
-    <div id="experience" className="screen-secondary experience">
+    <div id="experience" className="experience background-color-second">
       <ContainerComponent fullHeight={true}>
         <div className="content-experience">
           <div className="content-experience-titulos">

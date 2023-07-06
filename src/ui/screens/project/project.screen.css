@@ -3,8 +3,10 @@
 }
 
 .screen-contents-projects > h1 {
-  margin: 32px 0;
+  margin-bottom: 32px;
+  padding-top: 16px;
   font-size: var(--size-text-big);
+  color: var(--body_color);
 }
 
 .contents-projects {

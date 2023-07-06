@@ -46,7 +46,7 @@ export function ContactScreen() {
   }
 
   return (
-    <div id="contact" className="screen screen-secondary contact">
+    <div id="contact" className="contact background-color-second">
       <ContainerComponent fullHeight={true}>
         <div className="contact-screen-content">
           <div className="contact-screen-contacts">
