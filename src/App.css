@@ -25,10 +25,10 @@
   --body_background_navbar: #ffdead;
   --body_hover_navbar: #ffffff81;
   --body_active-color: #bd8905;
+  --body_active-color-card: #bd8905;
   --body_card_project: #ffdead;
   --body_active_navbar-color: #bd8905;
   --body_font_color_transparent: #0000006c;
-  --body_footer-color: #bd8905;
   --height-nav-bar: 58px;
   --height-nav-bar-fixed: 58px;
 
@@ -57,6 +57,7 @@
   --body_background_navbar: #bd8905;
   --body_hover_navbar: #504e4e79;
   --body_active-color: #bd8905;
+  --body_active-color-card: #000000;
   --body_active_navbar-color: #050400;
   --body_card_project: #bd8905;
   --body_font_color_transparent: #ffffff6b;

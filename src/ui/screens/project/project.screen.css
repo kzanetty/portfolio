@@ -34,7 +34,7 @@
 }
 
 .card-project-component:hover > h1 {
-  color: var(--body_active-color);
+  color: var(--body_active-color-card);
 }
 
 .card-project-images {
