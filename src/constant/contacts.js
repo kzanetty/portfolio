@@ -14,7 +14,7 @@ const contacts = [
   {
     name: "Whatsapp",
     image: iconOptions.WHATSAPP,
-    path: "https://api.whatsapp.com/send?phone=51989585388",
+    path: "https://api.whatsapp.com/send?phone=5551989585388",
   },
   {
     name: "Email",

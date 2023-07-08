@@ -11,6 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "copy-dist-to-docs": "xcopy /E /Y dist docs",
     "format": "npx prettier --write ./src/"
   },
   "dependencies": {
