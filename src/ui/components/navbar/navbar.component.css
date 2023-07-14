@@ -89,7 +89,7 @@
   .menu-toggle {
     display: block;
     position: fixed;
-    top: 5px;
+    top: 15px;
     right: 5px;
     background-color: transparent;
     cursor: pointer;

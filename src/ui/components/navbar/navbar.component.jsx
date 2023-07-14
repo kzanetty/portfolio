@@ -33,7 +33,7 @@ export function NavbarComponent() {
             <RenderIcon
               icon={iconOptions.MENU}
               alt="icon program"
-              width="50px"
+              width="35px"
             />
           </button>
           <div className="logo-navbar">

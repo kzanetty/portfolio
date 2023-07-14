@@ -22,33 +22,23 @@ const projects = [
     },
   },
   {
-    title: "Portfolio",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique, quibusdam neque voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque illo saepe omnis culpa.",
-    technologies: ["React", "Javascript", "GitHub Pages"],
-    github: "https://github.com/kzanetty/application",
+    title: "Spring security",
+    text: "Esta API foi criada com o objetivo de demonstrar a usabilidade do Spring Security. Ela fornece recursos de autenticação e autorização para permitir que os usuários acessem o sistema de forma segura.",
+    technologies: ["React", "Spring Boot", "PostgreSQL"],
+    github: "https://github.com/kzanetty/login-spring-security",
     deploy: {
       state: false,
-      path: "https://kzanetty.github.io/application/#/",
+      path: "N/A",
     },
   },
   {
-    title: "Portfolio",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique ",
-    technologies: ["React", "Javascript", "GitHub Pages"],
-    github: "https://github.com/kzanetty/application",
+    title: "API de compras",
+    text: "Esta é uma API desenvolvida para controlar a compra de produtos. Ao realizar um pedido de um ou mais produtos, a API gera uma nota de compra contendo o histórico da transação.",
+    technologies: ["Spring Boot", "MySQL", "H2 Database"],
+    github: "https://github.com/kzanetty/API-Controle-de-Compra-de-Produtos",
     deploy: {
       state: false,
-      path: "https://kzanetty.github.io/application/#/",
-    },
-  },
-  {
-    title: "Portfolio",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, facere atque unde optio hic ratione similique, quibusdam neque voluptate laboriosam tempora dicta cupiditate ducimus delectus eaque.",
-    technologies: ["React", "Javascript", "GitHub Pages"],
-    github: "https://github.com/kzanetty/application",
-    deploy: {
-      state: true,
-      path: "https://kzanetty.github.io/application/#/",
+      path: "N/A",
     },
   },
 ];
